@@ -35,6 +35,31 @@ export const useAssets = () => {
 
   useEffect(() => {
     fetchAssets();
+
+    // Subscribe to realtime updates
+    const channel = supabase
+      .channel('assets-realtime')
+      .on(
+        'postgres_changes',
+        {
+          event: 'UPDATE',
+          schema: 'public',
+          table: 'assets',
+        },
+        (payload) => {
+          const updatedAsset = payload.new as Asset;
+          setAssets((currentAssets) =>
+            currentAssets.map((asset) =>
+              asset.id === updatedAsset.id ? updatedAsset : asset
+            )
+          );
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, []);
 
   return { assets, loading, refetch: fetchAssets };
