@@ -1,14 +1,14 @@
   **[Investlite‑Demo‑Platform on GitHub]
   (https://github.com/ade-gb/investlite-demo-platform)** this explains it clearly so developers can easily understand, use, and contribute to it.
 
----
+--
 
 # 🚀 Investlite Demo Platform
 
 A modern **investment platform demo built with React, Vite, TypeScript, Tailwind CSS, and Supabase** — created to showcase a functional front end application for investing features and workflows.
 This project aims to help developers explore, modify, and build on top of a fully configured demo stack.
 
----
+--
 
 ## 📌 Table of Contents
 
@@ -26,7 +26,7 @@ This project aims to help developers explore, modify, and build on top of a full
 * 📄 **License**
 * 📞 **Contact**
 
----
+--
 
 ## 🧠 About the Project
 
@@ -39,7 +39,7 @@ The **Investlite Demo Platform** is a front end demonstration of an investment s
 
 This README provides clear instructions and context so contributors and users can get started quickly and understand the purpose of each part of the code.
 
----
+--
 
 ## ⚙️ Features
 
