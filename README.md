@@ -1,7 +1,7 @@
   **[Investlite‑Demo‑Platform on GitHub]
   (https://github.com/ade-gb/investlite-demo-platform)** this explains it clearly so developers can easily understand, use, and contribute to it.
 
---
+-
 
 # 🚀 Investlite Demo Platform
 
